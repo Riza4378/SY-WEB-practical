@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Object Manipulation</title>
+
+    <style>
+        body {
+            background: #dcd6f7;
+            font-family: Arial;
+        }
+
+        #box {
+            padding: 20px;
+            text-align: center;
+            background: white;
+            border-radius: 15px;
+        }
+
+        #title {
+            color: purple;
+        }
+
+        #message {
+            padding: 10px;
+            background: #eee;
+            border-radius: 8px;
+        }
+
+        #image {
+            border-radius: 10px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 15px;
+            background: purple;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box">
+
+        <h1 id="title">DOM Manipulation</h1>
+
+        <p id="message">This is my DOM.</p>
+
+        <img id="image"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsq_CwZBFZlDz9va9-MpXqDju1fMfJ043Iud2udU6Vaw&s=10"
+             width="300">
+
+        <br><br>
+
+        <a id="link" href="https://www.google.com">
+            Google
+        </a>
+
+        <br><br>
+
+        <button onclick="content()">Change Content</button>
+
+        <button onclick="styleChange()">Change Style</button>
+
+        <button onclick="imageChange()">Change Image</button>
+
+        <button onclick="linkChange()">Change Link</button>
+
+       <button onclick="attributeChange()">change Attribute</button>
+
+
+       
+    </div>
+
+    <script>
+
+        function content() {
+            document.getElementById("title").innerHTML =
+                "DOM Manipulation";
+
+            document.getElementById("message").innerText =
+                "Message changed using DOM";
+        }
+
+        function styleChange() {
+            document.getElementById("title").style.color = "pink";
+
+            document.getElementById("message").style.backgroundColor =
+                "lightblue";
+        }
+
+        function imageChange() {
+            document.getElementById("image").src =
+               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXin6kzerDs0yi8Zi2-eJR5VJ1QNMaQGnlgjGeRQ8N4dg3IUdULnbKrWU&s";
+        }
+
+        function linkChange() {
+            document.getElementById("link").href =
+                "https://www.youtube.com";
+
+            document.getElementById("link").innerText =
+                "YouTube";
+        }
+        
+      
+        function attributeChange() {
+    document.getElementById("image").setAttribute("width", "500");
+    document.getElementById("image").setAttribute("height", "300");
+}
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
