@@ -1,0 +1,54 @@
+body {
+    background: linear-gradient(to right, skyblue, pink);
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+    font-size: 35px;
+}
+
+p {
+    color: #333;
+    font-size: 18px;
+}
+
+button {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: red;
+    transform: scale(1.1);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    margin: 30px auto;
+    transition: 0.5s;
+}
+
+.box:hover {
+    transform: rotate(20deg) scale(1.2);
+}
+
+.rotate-box {
+    width: 80px;
+    height: 80px;
+    background: green;
+    margin: 30px auto;
+    animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
