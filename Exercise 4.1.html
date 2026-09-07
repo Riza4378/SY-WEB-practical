@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Basics</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Basics</h1>
+
+    <script>
+        let a =10;
+        let b =2;
+
+        document.write("<h2>Variables</h2>");
+        document.write("a = " + a + "<br>");
+        document.write("b = " + b + "<br>");
+
+
+     
+        document.write("<h2>Arithmetic Operators</h2>");
+        document.write("Addition = " + (a + b) + "<br>");
+        document.write("Subtraction = " + (a - b) + "<br>");
+        document.write("Multiplication = " + (a * b) + "<br>");
+        document.write("Division = " + (a / b) + "<br>");
+        document.write("Modulus = " + (a % b) + "<br>");
+
+
+        document.write("<h2>Conditional Statement</h2>");
+
+        if (a > b) {
+            document.write("a is greater than b");
+        } else {
+            document.write("b is greater than a");
+        }
+
+
+   
+        document.write("<h2>Loop</h2>");
+
+        for (let i = 1; i <= 5; i++) {
+            document.write("Number: " + i + "<br>");
+        }
+
+
+        
+        document.write("<h2>JavaScript Function</h2>");
+
+        function add(x, y) {
+            return x + y;
+        }
+
+        document.write("Sum = " + add(a, b));
+
+    </script>
+
+</body>
+</html>
